@@ -1,3 +1,11 @@
+Here we are going to use bootstap css files, instead of using default css
+
+	1. install  bootstrap module
+		`npm install --save bootstrap@3`
+	2. configure the bootstra css to application
+		angular.json ---> styles --> provide the bootstrap css path
+
+
 # HelloWorldBootstrap
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
