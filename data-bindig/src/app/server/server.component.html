@@ -1,0 +1,25 @@
+<p>Server Comonent</p>
+<!-- String interpolation
+    serverName is of type String
+    serverId is of type int but can be covertiable as string-->
+{{serverName}} is running with the id: {{serverId}} and server status is: {{getServerStatus()}}
+<br><br><br>
+
+<!-- Property Binding -->
+<button [disabled]="!buttonFlag">Click Me</button>
+
+<br><br><br>
+<!-- Event Binding-->
+<button (click)="onButtonClick()">Event Binding</button>
+<br>
+Latest Date and Time: {{dateAndTime}}
+
+<br><br><br>
+<input type="text" (input) = "onUpdate($event)">
+<br> 
+Entered Value: {{input}}
+<br><br><br>
+<!-- Two way data binding-->
+<input type="text" [(ngModel)]="twoWay"/>
+<br> 
+Two way binding: {{twoWay}}
